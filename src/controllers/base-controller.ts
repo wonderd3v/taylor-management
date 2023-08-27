@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express';
-import { BaseCrudService } from '../services/baseService'; 
-import { BaseModelAttributes } from '../models/baseModel';
+import { BaseCrudService } from '../services/base-service'; 
+import { BaseModelAttributes } from '../models/base-model';
 
 export function createBaseController<T extends BaseModelAttributes, BaseInputAttributes>(
 	service: BaseCrudService<T, BaseInputAttributes>,
@@ -71,8 +71,3 @@ export function createBaseController<T extends BaseModelAttributes, BaseInputAtt
 	return { router, path };
 }
 
-
-// Usage:
-// const userService = new BaseCrudService<User>(UserModel);
-// const { router, path } = createBaseController(userService, '/users');
-// app.use(path, router);

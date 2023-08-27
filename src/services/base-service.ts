@@ -1,4 +1,4 @@
-import { BaseModel, BaseModelAttributes } from './../models/baseModel';
+import { BaseModel, BaseModelAttributes } from '../models/base-model';
 
 interface CRUDOptions {
   excludeFields?: string[];

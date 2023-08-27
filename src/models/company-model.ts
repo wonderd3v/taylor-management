@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import { initializeModel, BaseInputAttributes, BaseOutputAttributes } from './baseModel';
+import { initializeModel, BaseInputAttributes, BaseOutputAttributes } from './base-model';
 import sequelizeConnection from '../config/dbContext/dbConnection';
 
 interface CompanySpecificAttributes {
